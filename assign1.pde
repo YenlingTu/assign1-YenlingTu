@@ -1,12 +1,13 @@
 
-float soldierx=0;
-float soldiery=80*int(random(2,6));
-float soldierSpeedx=4;
-float robotx=random(160,560);
-float roboty=80*int(random(2,6));
-float raserx=robotx;
-float rasery=roboty+37;
-float raserSpeedx=2;
+
+float soldierX=0;
+float soldierY=80*int(random(2,6));
+float soldierSpeedX=4;
+float robotX=random(160,560);
+float robotY=80*int(random(2,6));
+float raserX=robotX;
+float raserY=robotY+37;
+float raserSpeedX=2;
 PImage bg,soil,life1,life2,life3,groundhog,soldier,robot;
 
 void setup() {
@@ -46,15 +47,16 @@ fill(253, 184, 19);
 ellipse(590,50,120,120);
 
   //Soldier
-  image(soldier,soldierx,soldiery);
-  soldierx+=soldierSpeedx;//Soldier Movement
-  soldierx%=640;//Soldier Movement 
+  image(soldier,soldierX,soldierY);
+  soldierX+=soldierSpeedX;//Soldier Movement
+  soldierX%=640;//Soldier Movement 
   //Raser
   stroke(255,0,0);
   strokeWeight(10);
-  line(raserx+25- raserSpeedx,rasery,raserx+25- raserSpeedx+min(raserSpeedx,40),rasery);
- raserSpeedx+=2;//Raser Movement
-raserSpeedx%=160;//Raser Movement
-//Robot
-  image(robot,robotx,roboty);
-}
+  line(raserX+25- raserSpeedX,raserY,raserX+25- raserSpeedX+min(raserSpeedX,40),raserY);
+ raserSpeedX+=2;//Raser Movement
+raserSpeedX%=160;//Raser Movement
+  //Robot
+  image(robot,robotX,robotY);
+  
+  }
