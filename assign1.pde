@@ -5,9 +5,9 @@ float soldierY=80*int(random(2,6));
 float soldierSpeedX=4;
 float robotX=random(160,560);
 float robotY=80*int(random(2,6));
-float raserX=robotX;
-float raserY=robotY+37;
-float raserSpeedX=2;
+float laserX=robotX;
+float laserY=robotY+37;
+float laserSpeedX=2;
 PImage bg,soil,life1,life2,life3,groundhog,soldier,robot;
 
 void setup() {
@@ -50,12 +50,12 @@ ellipse(590,50,120,120);
   image(soldier,soldierX,soldierY);
   soldierX+=soldierSpeedX;//Soldier Movement
   soldierX%=640;//Soldier Movement 
-  //Raser
+  //Laser
   stroke(255,0,0);
   strokeWeight(10);
-  line(raserX+25- raserSpeedX,raserY,raserX+25- raserSpeedX+min(raserSpeedX,40),raserY);
- raserSpeedX+=2;//Raser Movement
-raserSpeedX%=160;//Raser Movement
+  line(laserX+25- laserSpeedX,laserY,laserX+25- laserSpeedX+min(laserSpeedX,30),laserY);
+ laserSpeedX+=2;//laser Movement
+laserSpeedX%=160;//Laser Movement
   //Robot
   image(robot,robotX,robotY);
   
