@@ -49,7 +49,7 @@ ellipse(590,50,120,120);
   //Soldier
   image(soldier,soldierX-80,soldierY);
   soldierX+=soldierSpeedX;//Soldier Movement
-  soldierX%=640;//Soldier Movement 
+  soldierX%=720;//Soldier Movement 
   //Laser
   stroke(255,0,0);
   strokeWeight(10);
