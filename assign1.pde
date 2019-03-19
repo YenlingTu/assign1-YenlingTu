@@ -47,7 +47,7 @@ fill(253, 184, 19);
 ellipse(590,50,120,120);
 
   //Soldier
-  image(soldier,soldierX,soldierY);
+  image(soldier,soldierX-80,soldierY);
   soldierX+=soldierSpeedX;//Soldier Movement
   soldierX%=640;//Soldier Movement 
   //Laser
